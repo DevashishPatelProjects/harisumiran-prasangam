@@ -36,6 +36,13 @@ export default function (plop) {
 				path: "src/{{componenttype}}/{{pascalCase componentname}}/{{pascalCase componentname}}.stories.jsx",
 				templateFile: "ploptemplate/component.stories.jsx.hbs",
 			},
+			{
+				path: "src/{{componenttype}}/index.jsx",
+				pattern: /(\/\/ COMPONENT IMPORTS)/g,
+				template:
+					"export {default as {{pascalCase componentname}} } from './{{pascalCase componentname}}';\n$1",
+				type: "modify",
+			},
 		], // array of actions
 	});
 }
