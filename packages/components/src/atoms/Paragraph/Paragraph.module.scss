@@ -1,4 +1,9 @@
+@import "../../styles/styles.scss";
+
 .button{
-  color:red;
-  font-size:24px;
+  font-family: $fontfamily;
+  color:$black;
+  font-size: $fontsize-body01;
+  line-height: $lineheight-body01;
+  font-weight: $fontweight-regular;
 }
