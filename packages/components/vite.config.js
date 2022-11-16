@@ -9,7 +9,7 @@ const App = async () => {
 	var name = "components";
 
 	// const data = await readFile(path.join(__dirname, "src", "lib", "index.jsx"), {
-	const data = await readFile(path.join(__dirname, "src", "components.jsx"), {
+	const data = await readFile(path.join(__dirname, "src", "components.js"), {
 		encoding: "utf-8",
 	});
 
@@ -29,7 +29,7 @@ const App = async () => {
 		build: {
 			lib: {
 				// entry: path.resolve(__dirname, "src/lib/index.jsx"),
-				entry: path.resolve(__dirname, "src/components.jsx"),
+				entry: path.resolve(__dirname, "src/components.js"),
 				name,
 				formats: ["es", "umd"],
 				fileName: (format) => `components.${format}.js`,
