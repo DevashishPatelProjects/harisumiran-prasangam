@@ -1,0 +1,74 @@
+@import "../../styles/styles.scss";
+
+.Button{
+  color:$white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+//variant
+.primary{
+
+}
+.secondary{
+
+}
+.dashed{
+  
+}
+
+//themes
+.primary-theme,.primary{
+  background-color: $primary-blue;
+  &:hover{
+    background-color: $blue02;
+  }
+}
+.secondary-theme{
+  background-color: $secondary-pink;
+  &:hover{
+    background-color: $pink02;
+  }
+}
+.danger-theme{
+  background-color: $danger-red;
+  &:hover{
+    background-color: $red02;
+  }
+}
+.info-theme{
+  background-color:$info-teal;
+  &:hover{
+    background-color: $teal02;
+  }
+}
+.success-theme{
+  background-color:$success-green;
+  &:hover{
+    background-color: $green02;
+  }
+}
+.warning-theme{
+  background-color:$warning-yellow;
+  &:hover{
+    background-color: $yellow02;
+  }
+}
+.dark-theme{
+  background-color: $black;
+}
+
+//sizes
+.default{
+  padding: 12px 24px;
+}
+.small{
+  padding: 8px 16px;
+}
+.large{
+  padding: 16px 38px;
+}
