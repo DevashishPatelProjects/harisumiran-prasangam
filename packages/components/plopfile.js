@@ -37,7 +37,7 @@ export default function (plop) {
 				templateFile: "ploptemplate/component.stories.jsx.hbs",
 			},
 			{
-				path: "src/{{componenttype}}/index.jsx",
+				path: "src/{{componenttype}}/index.js",
 				pattern: /(\/\/ COMPONENT IMPORTS)/g,
 				template:
 					"export {default as {{pascalCase componentname}} } from './{{pascalCase componentname}}';\n$1",
