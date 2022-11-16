@@ -12,15 +12,16 @@ export default function Button({
   variant='primary',
   isButton,
   href,
-  onclick
+  onClick
 }) {
+  const classname=(cx('Button',`${theme}-theme`,size,variant) )
   return (
     isButton?(
 
-      <div className={cx('Button',`${theme}-theme`,size) }>{text}</div>
+      <div tabIndex="1" onClick={onClick} className={classname}>{text}</div>
     ):
     (
-      <a href={href} className={cx('Button',`${theme}-theme`,size) }>{text}</a>
+      <a tabIndex="1" href={href} className={classname }>{text}</a>
     )
   )
 }

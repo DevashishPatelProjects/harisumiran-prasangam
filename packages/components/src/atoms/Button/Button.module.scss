@@ -1,67 +1,123 @@
 @import "../../styles/styles.scss";
 
 .Button{
+  font-family: $fontfamily;
   color:$white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 7px;
   &:hover{
     cursor: pointer;
+  }
+  &:focus{
+    border:1px solid #0077c5;
   }
 }
 //variant
 .primary{
+  border: 1px solid;
+  &.primary-theme{
+    background-color: $primary-blue;
+    &:hover{
+      background-color: $blue02;
+    }
+  }
+  &.secondary-theme{
+    background-color: $secondary-pink;
+    &:hover{
+      background-color: $pink02;
+    }
+  }
+  &.danger-theme{
+    background-color: $danger-red;
+    &:hover{
+      background-color: $red02;
+    }
+  }
+  &.info-theme{
+    background-color:$info-teal;
+    &:hover{
+      background-color: $teal02;
+    }
+  }
+  &.success-theme{
+    background-color:$success-green;
+    &:hover{
+      background-color: $green02;
+    }
+  }
+  &.warning-theme{
+    background-color:$warning-yellow;
+    &:hover{
+      background-color: $yellow02;
+    }
+  }
+  &.dark-theme{
+    background-color: $black;
+  }
+
+}
+.secondary,
+.dashed{
+  background-color:$white;
+  &.primary-theme{
+    border-color: $primary-blue;
+    color: $primary-blue;
+    &:hover{
+      border-color: $blue02;
+    }
+  }
+  &.secondary-theme{
+    border-color: $secondary-pink;
+    color: $secondary-pink;
+    &:hover{
+      border-color: $pink02;
+    }
+  }
+  &.danger-theme{
+    border-color: $danger-red;
+    color: $danger-red;
+    &:hover{
+      border-color: $red02;
+    }
+  }
+  &.info-theme{
+    border-color:$info-teal;
+    color:$info-teal;
+    &:hover{
+      border-color: $teal02;
+    }
+  }
+  &.success-theme{
+    border-color:$success-green;
+    color:$success-green;
+    &:hover{
+      border-color: $green02;
+    }
+  }
+  &.warning-theme{
+    border-color:$warning-yellow;
+    color:$warning-yellow;
+    &:hover{
+      border-color: $yellow02;
+    }
+  }
+  &.dark-theme{
+    border-color: $black;
+    color: $black;
+    &:hover{
+      border-color: $black;
+    }
+  }
 
 }
 .secondary{
-
+  border: 1px solid;
 }
 .dashed{
-  
+  border: 1px dashed;
 }
-
-//themes
-.primary-theme,.primary{
-  background-color: $primary-blue;
-  &:hover{
-    background-color: $blue02;
-  }
-}
-.secondary-theme{
-  background-color: $secondary-pink;
-  &:hover{
-    background-color: $pink02;
-  }
-}
-.danger-theme{
-  background-color: $danger-red;
-  &:hover{
-    background-color: $red02;
-  }
-}
-.info-theme{
-  background-color:$info-teal;
-  &:hover{
-    background-color: $teal02;
-  }
-}
-.success-theme{
-  background-color:$success-green;
-  &:hover{
-    background-color: $green02;
-  }
-}
-.warning-theme{
-  background-color:$warning-yellow;
-  &:hover{
-    background-color: $yellow02;
-  }
-}
-.dark-theme{
-  background-color: $black;
-}
-
 //sizes
 .default{
   padding: 12px 24px;

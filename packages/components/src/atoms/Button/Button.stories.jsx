@@ -29,14 +29,47 @@ export default {
 
   },
 };
-const Template = (args) => <Button {...args} />;
+const Template = (args) => 
 
-export const Primary = Template.bind({});
-Primary.args = {
+<>
+<Button {...args} />
+</>
+
+const onClick = ()=>{
+ alert(`clicked`)
+}
+
+
+export const Default = Template.bind({});
+Default.args = {
   text: 'Button',
-  theme:'primary',
   size:'default',
-  href:"#"
+  theme:'primary',
+  variant:'primary',
+  href:"#",
+  onClick
 };
+export const Hover = Template.bind({});
+Hover.parameters = { pseudo: { hover: true } }
+Hover.args = {
+  text: 'Button',
+  size:'default',
+  theme:'primary',
+  variant:'primary',
+  href:"#",
+  onClick
+};
+export const Focus = Template.bind({});
+Focus.parameters = { pseudo: { focus: true } }
+Focus.args = {
+  text: 'Button',
+  size:'default',
+  theme:'primary',
+  variant:'primary',
+  href:"#",
+  onClick
+};
+
+
 
 
