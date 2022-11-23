@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_atom_buttons",
+  "info": {
+    "displayName": "Button"
+  },
+  "options": {},
+  "attributes": {
+    "ButtonTitle": {
+      "type": "string",
+      "default": "Button",
+      "required": true
+    },
+    "href": {
+      "type": "string",
+      "default": "#",
+      "required": false
+    }
+  }
+}
