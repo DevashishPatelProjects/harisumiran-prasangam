@@ -5,8 +5,10 @@
   color:$white;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  width:max-content;
+  border-radius:8px;
   &:hover{
     cursor: pointer;
   }
@@ -127,4 +129,59 @@
 }
 .large{
   padding: 16px 38px;
+}
+.icon{
+  width:16px;
+  height:16px;
+  &.primary-variant{
+    fill:$white;
+  }
+  &.secondary-variant,&.dashed-variant{
+      &.primary-icon-theme{
+        fill: $primary-blue;
+        &:hover{
+          fill: $blue02;
+        }
+      }
+      &.secondary-icon-theme{
+        fill: $secondary-pink;
+        &:hover{
+          fill: $pink02;
+        }
+      }
+      &.danger-icon-theme{
+        fill: $danger-red;
+        &:hover{
+          fill: $red02;
+        }
+      }
+      &.info-icon-theme{
+        fill:$info-teal;
+        &:hover{
+          fill: $teal02;
+        }
+      }
+      &.success-icon-theme{
+        fill:$success-green;
+        &:hover{
+          fill: $green02;
+        }
+      }
+      &.warning-icon-theme{
+        fill:$warning-yellow;
+        &:hover{
+          fill: $yellow02;
+        }
+      }
+      &.dark-icon-theme{
+        fill: $black;
+        &:hover{
+          fill: $black;
+        }
+      }
+  }
+
+}
+.button-text{
+  margin: auto 8px;
 }

@@ -1,6 +1,8 @@
 import React from 'react';
+import ICONS from "../Icon/icons.json"
 
 import  Button  from './Button';
+const iconOptions = Object.keys(ICONS).sort().reduce((prev, curr) => { return {...prev, [curr]: curr} }, { 'NONE': null })
 export default {
   title: 'atom/Button',
   component: Button, 
@@ -25,7 +27,8 @@ export default {
     variant:{
       control:'select',
       options:['primary','secondary','dashed']
-    }
+    },
+    icon: { options: iconOptions, control: 'select' }, 
 
   },
 };
